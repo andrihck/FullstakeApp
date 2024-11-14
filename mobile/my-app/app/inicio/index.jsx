@@ -9,7 +9,7 @@ const sonarize = () => {
       <View style={styles.navbar}>
 
       <Link href='/playlist'>
-        <Image style={styles.icon} source={require('../img/logo.png')} /></Link>
+        <Image style={styles.icon} source={require('../img/fone.png')} /></Link>
         
         <Pressable style={styles.navBotaoMusica}>
           <Text style={styles.navTextoBotaoMusica}>Música</Text>
@@ -29,29 +29,21 @@ const sonarize = () => {
 
       </View>
       <ScrollView>
-        <ImageBackground source={require('../img/FundoPH.png')} style={styles.ImagemFundo} />
+        <ImageBackground source={require('../img/VEIGH.png')} style={styles.ImagemFundo} />
         <View style={styles.artistas}>
           <Text style={styles.artistaTitulo}>Melhores artistas</Text>
           <View style={styles.boxartista}>
             <View style={styles.circulo}>
-              <Image style={styles.imgArtista} source={require('../img/artistas/filipeRet.png')} />
+              <Image style={styles.imgArtista} source={require('../img/artistas/jao.png')} />
             </View>
             <View style={styles.circulo}>
-              <Image style={styles.imgArtista} source={require('../img/artistas/joaoGomes.png')} />
+              <Image style={styles.imgArtista} source={require('../img/artistas/jb.png')} />
             </View>
             <View style={styles.circulo}>
-              <Image style={styles.imgArtista} source={require('../img/artistas/luisaSonza.png')} />
+              <Image style={styles.imgArtista} source={require('../img/artistas/mcig.png')} />
             </View>
           </View>
         </View>
-       
-        <Text style={styles.TituloParaVoce}>Para Você</Text>
-        <FlatList
-          data={TopPlaylists}
-          renderItem={CaixaLista}
-          horizontal
-          contentContainerStyle={styles.playlistContainerPlaylist}
-        />
 
         <Text style={styles.TituloParaVoce}>Top Podcast Latinos</Text>
 
@@ -79,10 +71,10 @@ const CaixaLista = ({ item }) => (
 );
 
 const TopPlaylists = [
-  { id: '1', nome: 'Braba', artista: 'Tuto, Joazinho da vt ...', imagem: require('../img/playlist/BRABA.png') },
-  { id: '2', nome: 'Parada Rap', artista: 'Racionais mcs, Dexter...', imagem: require('../img/playlist/ParadaRap.png') },
-  { id: '3', nome: 'Poesia Acústica', artista: 'Xamã, Mc Poze, ...', imagem: require('../img/playlist/PoesiaAcustica.png') },
-  { id: '4', nome: 'Top Sertanejo', artista: 'Marilia, Jorge e Mateus ...', imagem: require('../img/playlist/TopSertanejo.png') },
+  { id: '1', nome: 'Poesia Acústica', artista: 'Mc Cabelinho, Xamã, Felipe Ret, ...', imagem: require('../img/playlist/poesia.PNG') },
+  { id: '2', nome: 'TOP Sertanejos', artista: 'Jorge e Mateus, Matheus e Kauan, ...', imagem: require('../img/playlist/sertanejos.PNG') },
+  { id: '3', nome: 'TOP Funks ', artista: 'Mc Paiva, MC ig , ...', imagem: require('../img/playlist/topfunks.PNG') },
+  { id: '4', nome: 'Top Sertanejo', artista: 'Haiskaiss, Matuê, ...', imagem: require('../img/playlist/topraps.PNG') },
 ];
 
 const CaixaPodCast = ({ item }) => (
@@ -95,14 +87,8 @@ const CaixaPodCast = ({ item }) => (
       </View>
     </Link>
   </View>
-);
+)
 
-
-const Podcasts = [
-  { id: '1', nome: 'Lutz',imagem: require('../img/podcast/LutzPodCast.png') },
-  { id: '2', nome: 'Pod Delas',imagem: require('../img/podcast/PodDelas.png') },
-  { id: '3', nome: 'Pod Pah',imagem: require('../img/podcast/PodPah.png') },
-];
 const styles = StyleSheet.create({
   container: {
     flex: 1,

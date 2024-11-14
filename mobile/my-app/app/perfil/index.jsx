@@ -33,11 +33,11 @@ export default function UserProfile() {
 
         <View style={styles.infoContainer}>
           <Text style={styles.infoTexto}>Nome:</Text>
-          <Text style={styles.infoInput}>Arthur Jose Fraga</Text>
+          <Text style={styles.infoInput}>Andrielli dos Santos Hencker</Text>
           <Text style={styles.infoTexto}>Email:</Text>
           <Text style={styles.infoInput}>arthurjosefraga@gmail.com</Text>
           <Text style={styles.infoTexto}>Data de nasc.</Text>
-          <Text style={styles.infoInput}>05/11/2006</Text>
+          <Text style={styles.infoInput}>19/03/2007</Text>
         </View>
 
         <Pressable style={styles.botaoSalvar}>

@@ -7,7 +7,7 @@ const Sonarize = () => {
   return (
     
     <ScrollView style={styles.container}>
-      <ImageBackground source={require('../img/playlist/BRABA.png')} style={styles.imageBackground}>
+      <ImageBackground source={require('../img/albuns/matuereprodução.png')} style={styles.imageBackground}>
       </ImageBackground>
       
       <View style={styles.spacing} /> 
